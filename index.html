@@ -29,7 +29,7 @@
   .center{text-align:center}
   section{padding:78px 0;position:relative}
   /* glass primitives */
-  .glass{background:var(--glass);backdrop-filter:blur(20px) saturate(140%);-webkit-backdrop-filter:blur(20px) saturate(140%);border:1px solid var(--gb);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.08)}
+  .glass{background:var(--glass);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border:1px solid var(--gb);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.08)}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:800;padding:14px 24px;border-radius:999px;font-size:15px;cursor:pointer;border:none;transition:transform .18s cubic-bezier(.2,.7,.3,1),box-shadow .18s,filter .18s}
   .btn:hover{transform:translateY(-2px) scale(1.02)} .btn:active{transform:translateY(0) scale(.99)}
   .btn.gold{background:linear-gradient(135deg,#f4cf76,#caa033);color:#1a1408;box-shadow:0 12px 28px rgba(230,178,76,.34)}
@@ -41,7 +41,7 @@
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
   .reveal.in{opacity:1;transform:none}
 
-  .nav{position:sticky;top:0;z-index:60;background:rgba(11,16,32,.55);backdrop-filter:blur(16px) saturate(150%);border-bottom:1px solid var(--line)}
+  .nav{position:sticky;top:0;z-index:60;background:rgba(11,16,32,.55);backdrop-filter:blur(18px) saturate(170%);border-bottom:1px solid var(--line)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 22px;gap:14px}
   .logo{font-family:var(--serif);font-weight:900;font-size:21px;letter-spacing:.3px;line-height:1}
   .logo small{display:block;font-family:var(--sans);font-weight:700;font-size:9px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;margin-top:3px}
@@ -143,9 +143,32 @@
   @media(max-width:880px){.mbar{display:flex} body{padding-bottom:72px}}
   .flag{position:fixed;top:0;left:0;z-index:99;background:var(--gold);color:#1a1408;font-size:11px;font-weight:800;padding:5px 12px;border-bottom-right-radius:10px;letter-spacing:.5px}
   .hide{display:none!important}
+
+  /* ===== Tier-1 luxury lighting ===== */
+  .ambient{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+  .blob{position:absolute;border-radius:50%;filter:blur(85px);opacity:.55;mix-blend-mode:screen}
+  .blob.b1{width:520px;height:520px;left:-130px;top:-90px;background:radial-gradient(circle,rgba(230,178,76,.55),transparent 70%);animation:drift1 24s ease-in-out infinite}
+  .blob.b2{width:620px;height:620px;right:-180px;top:28%;background:radial-gradient(circle,rgba(43,210,119,.30),transparent 70%);animation:drift2 30s ease-in-out infinite}
+  .blob.b3{width:480px;height:480px;left:28%;bottom:-180px;background:radial-gradient(circle,rgba(120,140,255,.24),transparent 70%);animation:drift3 27s ease-in-out infinite}
+  @keyframes drift1{0%,100%{transform:translate(0,0)}50%{transform:translate(90px,70px)}}
+  @keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-100px,46px)}}
+  @keyframes drift3{0%,100%{transform:translate(0,0)}50%{transform:translate(50px,-80px)}}
+  .noise{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}
+  .cursorglow{position:fixed;width:420px;height:420px;border-radius:50%;left:0;top:0;transform:translate(-50%,-50%);pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(230,178,76,.12),transparent 62%);mix-blend-mode:screen;opacity:0;transition:opacity .35s}
+  /* border-beam on the estimator (the conversion crown-jewel) */
+  .appcard{position:relative}
+  .appcard .beam{position:absolute;inset:0;border-radius:22px;padding:1.4px;background:conic-gradient(from 0deg,transparent 66%,rgba(244,207,118,.95) 80%,rgba(255,255,255,.65) 87%,transparent 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 5s linear infinite;pointer-events:none;z-index:2}
+  .appcard .apphead,.appcard .appbody{position:relative;z-index:3}
+  /* smooth step morph */
+  @keyframes stepin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .stepin{animation:stepin .34s cubic-bezier(.2,.7,.3,1)}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Store","PawnShop"],"name":"Xtra Change of Mahopac","image":"https://img1.wsimg.com/isteam/ip/4c7fd63b-692e-46e2-a484-f641ec37dd46/IMG_8291.jpeg","telephone":"+1-845-621-0906","address":{"@type":"PostalAddress","streetAddress":"288 US Route 6","addressLocality":"Mahopac","addressRegion":"NY","postalCode":"10541","addressCountry":"US"},"priceRange":"$","url":"https://themortgagemaster01-eng.github.io/xtrachange-demo/","areaServed":"Mahopac, NY and the Lower Hudson Valley","description":"Buy, sell & trade gold, silver, tools, electronics, coins, watches, cards, instruments and collectibles. Same-day cash, paid on the spot."}</script>
 </head>
 <body>
+<div class="ambient"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="noise"></div>
+<div class="cursorglow" id="cglow"></div>
 <div class="flag">DEMO CONCEPT — by Obsidian Labs</div>
 
 <div class="nav"><div class="wrap">
@@ -160,7 +183,7 @@
   <h1 class="serif reveal">What's it <span class="gold">worth?</span><br>Find out in 30 seconds.</h1>
   <p class="reveal">Gold, tools, electronics, coins, watches, cards & more — bring it in and walk out with cash the same day. Get a ballpark first with our instant estimator.</p>
 
-  <div class="appcard glass reveal" id="appraiser">
+  <div class="appcard glass reveal" id="appraiser"><div class="beam"></div>
     <div class="apphead"><div class="badge">🤖</div><div><h3>AI Instant Estimator</h3><p>Ballpark value in a few taps — no account, no obligation.</p></div>
       <div class="pulse"><i></i> Live market</div></div>
     <div class="appbody">
@@ -256,7 +279,8 @@ var state={cat:null};
 function $(id){return document.getElementById(id);}
 function setStep(n){['step1','step2','stepload','step3'].forEach(function(s){$(s).classList.add('hide');});
   if(n===1)$('step1').classList.remove('hide'); if(n===2)$('step2').classList.remove('hide'); if(n==='load')$('stepload').classList.remove('hide'); if(n===3)$('step3').classList.remove('hide');
-  var k=(n==='load')?2:(typeof n==='number'?n:1); $('d1').classList.toggle('on',k>=1);$('d2').classList.toggle('on',k>=2);$('d3').classList.toggle('on',(n===3));}
+  var k=(n==='load')?2:(typeof n==='number'?n:1); $('d1').classList.toggle('on',k>=1);$('d2').classList.toggle('on',k>=2);$('d3').classList.toggle('on',(n===3));
+  var act=(n===1)?'step1':(n===2)?'step2':(n==='load')?'stepload':'step3'; var ae=$(act); if(ae){ae.classList.remove('stepin');void ae.offsetWidth;ae.classList.add('stepin');}}
 function renderCats(){var g=$('catgrid');g.innerHTML='';Object.keys(CATS).forEach(function(k){var c=CATS[k];var d=document.createElement('div');d.className='cat';d.onclick=function(){pickCat(k)};d.innerHTML='<div class="ic">'+c.ic+'</div><div class="nm">'+c.nm+'</div>';g.appendChild(d);});}
 function chipRow(name,opts){return '<div class="chips" data-field="'+name+'">'+opts.map(function(o,i){return '<div class="chip'+(i===0?' sel':'')+'" data-val="'+o.v+'" onclick="pickChip(this)">'+o.t+'</div>';}).join('')+'</div>';}
 function pickChip(el){var row=el.parentNode;[].forEach.call(row.children,function(c){c.classList.remove('sel')});el.classList.add('sel');goLive();}
@@ -301,6 +325,17 @@ renderCats();setStep(1);
 /* scroll reveal */
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
 function wireReveal(){var els=[].slice.call(document.querySelectorAll('.reveal'));els.forEach(function(el,i){el.style.transitionDelay=((i%6)*0.06)+'s';io.observe(el);});}
+/* cursor glow */
+var cg=document.getElementById('cglow');
+window.addEventListener('pointermove',function(e){cg.style.left=e.clientX+'px';cg.style.top=e.clientY+'px';cg.style.opacity='1';},{passive:true});
+/* magnetic gold CTAs (desktop pointers) */
+if(window.matchMedia&&window.matchMedia('(pointer:fine)').matches){
+  [].forEach.call(document.querySelectorAll('.btn.gold'),function(btn){
+    btn.style.transition='transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .18s';
+    btn.addEventListener('pointermove',function(e){var r=btn.getBoundingClientRect();var x=e.clientX-(r.left+r.width/2),y=e.clientY-(r.top+r.height/2);btn.style.transform='translate('+(x*0.3)+'px,'+(y*0.3)+'px) scale(1.04)';});
+    btn.addEventListener('pointerleave',function(){btn.style.transform='';});
+  });
+}
 wireReveal();
 </script>
 </body>
