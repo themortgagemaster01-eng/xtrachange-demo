@@ -162,6 +162,32 @@
   /* smooth step morph */
   @keyframes stepin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
   .stepin{animation:stepin .34s cubic-bezier(.2,.7,.3,1)}
+
+  /* count-up metrics band */
+  .metrics{padding:26px 0}
+  .metrics .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:680px){.metrics .wrap{grid-template-columns:1fr 1fr}}
+  .mtile{text-align:center;padding:22px 14px}
+  .mtile .n{font-family:var(--serif);font-weight:900;font-size:clamp(26px,4vw,34px);background:linear-gradient(135deg,#fff,#f4cf76);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .mtile .l{font-size:12.5px;color:var(--mut);margin-top:5px;font-weight:500}
+  /* live AI concierge chat */
+  .xchat{max-width:720px;margin:0 auto;overflow:hidden;position:relative}
+  .xchat .beam{position:absolute;inset:0;border-radius:22px;padding:1.4px;background:conic-gradient(from 0deg,transparent 66%,rgba(244,207,118,.95) 80%,rgba(255,255,255,.65) 87%,transparent 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 5.5s linear infinite;pointer-events:none;z-index:2}
+  .xc-head,.xc-body{position:relative;z-index:3}
+  .xc-head{display:flex;align-items:center;gap:12px;padding:18px 22px;border-bottom:1px solid var(--line);background:rgba(230,178,76,.06)}
+  .xc-head .av{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-weight:800;font-size:20px;background:linear-gradient(135deg,#f4cf76,#caa033);color:#1a1408;box-shadow:0 8px 20px rgba(230,178,76,.45)}
+  .xc-head h3{font-family:var(--serif);font-size:18px} .xc-head p{font-size:12px;color:#bfe9cf}
+  .xc-body{padding:18px 22px 22px}
+  .chat{display:flex;flex-direction:column;gap:10px;min-height:160px;margin-bottom:14px}
+  .msg{max-width:84%;padding:11px 14px;border-radius:14px;font-size:14px;line-height:1.5}
+  .msg.user{align-self:flex-end;background:linear-gradient(135deg,#f4cf76,#caa033);color:#1a1408;font-weight:600;border-bottom-right-radius:5px}
+  .msg.bot{align-self:flex-start;background:rgba(255,255,255,.05);border:1px solid var(--line);border-bottom-left-radius:5px}
+  .typing span{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold-2);margin:0 1px;animation:blink 1.2s infinite}
+  .typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+  @keyframes blink{0%,60%,100%{opacity:.25}30%{opacity:1}}
+  .sugg{display:flex;flex-wrap:wrap;gap:8px}
+  .sugg button{background:rgba(255,255,255,.05);border:1px solid var(--line);color:#cdd3e2;border-radius:10px;padding:9px 13px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
+  .sugg button:hover{border-color:var(--gold);color:#fff}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Store","PawnShop"],"name":"Xtra Change of Mahopac","image":"https://img1.wsimg.com/isteam/ip/4c7fd63b-692e-46e2-a484-f641ec37dd46/IMG_8291.jpeg","telephone":"+1-845-621-0906","address":{"@type":"PostalAddress","streetAddress":"288 US Route 6","addressLocality":"Mahopac","addressRegion":"NY","postalCode":"10541","addressCountry":"US"},"priceRange":"$","url":"https://themortgagemaster01-eng.github.io/xtrachange-demo/","areaServed":"Mahopac, NY and the Lower Hudson Valley","description":"Buy, sell & trade gold, silver, tools, electronics, coins, watches, cards, instruments and collectibles. Same-day cash, paid on the spot."}</script>
 </head>
@@ -173,7 +199,7 @@
 
 <div class="nav"><div class="wrap">
   <div class="logo">Xtra Change<small>of Mahopac · Buy • Sell • Trade</small></div>
-  <nav><a href="#appraiser">Instant Estimate</a><a href="#buy">What We Buy</a><a href="#trust">Why Us</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
+  <nav><a href="#appraiser">Instant Estimate</a><a href="#buy">What We Buy</a><a href="#ask">Ask AI</a><a href="#trust">Why Us</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
   <a class="btn gold" href="#appraiser" style="padding:11px 18px">💰 Get an Estimate</a>
 </div></div>
 
@@ -205,9 +231,24 @@
   </div>
 </div></section>
 
-<div class="strip"><div class="wrap glass reveal">
-  <span>💵 <b>Cash on the spot</b></span><span>📅 Same-day payouts</span><span>🏆 12 years local</span><span>🏠 Estate &amp; collection buyouts</span>
+<div class="metrics"><div class="wrap reveal">
+  <div class="mtile glass"><div class="n" data-count="12" data-suffix="">0</div><div class="l">Years trusted in Mahopac</div></div>
+  <div class="mtile glass"><div class="n" data-count="10000" data-suffix="+" data-sep="1">0</div><div class="l">Items bought &amp; sold</div></div>
+  <div class="mtile glass"><div class="n" data-count="100" data-suffix="%">0</div><div class="l">Paid on the spot</div></div>
+  <div class="mtile glass"><div class="n" data-count="30" data-suffix="s">0</div><div class="l">Instant estimate</div></div>
 </div></div>
+
+<section id="ask"><div class="wrap">
+  <div class="center reveal"><div class="eyebrow">Got a quick question?</div><h2 class="h2 serif">Ask Xtra Change — instant answers</h2>
+  <p class="sub">Our AI assistant answers the common stuff in seconds, day or night.</p></div>
+  <div class="xchat glass reveal"><div class="beam"></div>
+    <div class="xc-head"><div class="av">$</div><div><h3 class="serif">Xtra Assistant</h3><p>● online — replies in seconds</p></div></div>
+    <div class="xc-body">
+      <div class="chat" id="chat"><div class="msg bot">Hey! 👋 Ask me what we buy, what it's worth, our hours, or how it works — I'm here 24/7.</div></div>
+      <div class="sugg" id="sugg"></div>
+    </div>
+  </div>
+</div></section>
 
 <section id="buy"><div class="wrap">
   <div class="center reveal"><div class="eyebrow">If it has value, we want it</div><h2 class="h2 serif">What we buy, sell &amp; trade</h2>
@@ -323,7 +364,12 @@ function appSnap(input){if(input.files&&input.files[0]){$('snaptxt').textContent
 function appReset(){state={cat:null};$('golive').style.display='none';setStep(1);}
 renderCats();setStep(1);
 /* scroll reveal */
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+function animateCount(el){var tgt=parseFloat(el.getAttribute('data-count')),suf=el.getAttribute('data-suffix')||'',sep=el.getAttribute('data-sep'),t0=performance.now();
+  function fmt(v){v=Math.round(v);return sep?v.toLocaleString():v;}
+  function tick(now){var pr=Math.min(1,(now-t0)/1200);var e=1-Math.pow(1-pr,3);el.textContent=fmt(tgt*e)+suf;if(pr<1)requestAnimationFrame(tick);else el.textContent=fmt(tgt)+suf;}requestAnimationFrame(tick);}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');
+  if(e.target.querySelectorAll){e.target.querySelectorAll('[data-count]').forEach(animateCount);}
+  io.unobserve(e.target);}})},{threshold:.12});
 function wireReveal(){var els=[].slice.call(document.querySelectorAll('.reveal'));els.forEach(function(el,i){el.style.transitionDelay=((i%6)*0.06)+'s';io.observe(el);});}
 /* cursor glow */
 var cg=document.getElementById('cglow');
@@ -336,6 +382,17 @@ if(window.matchMedia&&window.matchMedia('(pointer:fine)').matches){
     btn.addEventListener('pointerleave',function(){btn.style.transform='';});
   });
 }
+/* live AI concierge (scripted) */
+var XQA=[
+ {q:"Do you buy gold jewelry?",a:"Absolutely 🪙 — rings, chains, scrap, even broken pieces. We test it in front of you and pay today’s market rate, cash on the spot. Want a ballpark? Try the estimator up top."},
+ {q:"Are you open right now?",a:"Hours vary by day, so it’s best to call ahead at (845) 621-0906 — but bring your stuff anytime we’re open and you’ll walk out paid the same day."},
+ {q:"How much for my iPhone?",a:"Depends on the model and condition — the instant estimator gives a quick range, and we firm it up in store. Bring the charger, it bumps the offer 📱"},
+ {q:"Do you buy whole collections?",a:"Yes — a single item or an entire estate. Coins, cards, tools, memorabilia… if it has value, we want it. We handle estate liquidations too 🏠"}
+];
+function xcRender(){var s=document.getElementById('sugg');if(!s)return;s.innerHTML='';XQA.forEach(function(it){var b=document.createElement('button');b.textContent=it.q;b.onclick=function(){xcAsk(it);};s.appendChild(b);});}
+function xcAdd(cls,html){var d=document.createElement('div');d.className='msg '+cls;d.innerHTML=html;var c=document.getElementById('chat');c.appendChild(d);d.scrollIntoView({behavior:'smooth',block:'nearest'});return d;}
+function xcAsk(it){xcAdd('user',it.q);var t=xcAdd('bot','<span class="typing"><span></span><span></span><span></span></span>');setTimeout(function(){t.innerHTML=it.a;t.scrollIntoView({behavior:'smooth',block:'nearest'});},900+Math.random()*450);}
+xcRender();
 wireReveal();
 </script>
 </body>
