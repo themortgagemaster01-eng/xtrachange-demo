@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xtra Change of Mahopac — We Buy Gold, Tools, Electronics & More | Instant AI Estimate</title>
 <meta name="description" content="Showin' you the money since 2013. Xtra Change of Mahopac buys, sells & trades gold, tools, electronics, coins, watches, cards & more — paid on the spot. Get an instant AI estimate.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -18,11 +17,9 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  a{color:inherit;text-decoration:none}
-  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
   .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-  .serif{font-family:var(--serif)}
-  .gold{color:var(--gold)}
+  .serif{font-family:var(--serif)} .gold{color:var(--gold)}
   .eyebrow{color:var(--gold);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:12px}
   .h2{font-family:var(--serif);font-weight:800;font-size:clamp(28px,4.4vw,42px);line-height:1.08;margin:8px 0 8px}
   .sub{color:var(--mut);max-width:620px;margin:0 auto 36px;font-size:16px}
@@ -35,7 +32,6 @@
   .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(244,239,230,.3)}
   .btn.glass{background:var(--glass);color:var(--ink);border:1px solid var(--glass-b);backdrop-filter:blur(8px)}
 
-  /* nav */
   .nav{position:sticky;top:0;z-index:60;background:rgba(12,12,15,.7);backdrop-filter:blur(14px) saturate(140%);border-bottom:1px solid var(--line)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 22px;gap:14px}
   .logo{font-family:var(--serif);font-weight:900;font-size:21px;letter-spacing:.3px;line-height:1}
@@ -44,101 +40,91 @@
   .nav nav a:hover{color:var(--gold)}
   @media(max-width:880px){.nav nav{display:none}}
 
-  /* hero */
-  .hero{position:relative;padding:54px 0 30px;text-align:center;overflow:hidden}
-  .hero::before{content:"";position:absolute;inset:0;background:
-    radial-gradient(900px 380px at 50% -10%,rgba(230,184,76,.16),transparent 70%),
-    radial-gradient(600px 300px at 80% 20%,rgba(39,192,106,.08),transparent 70%)}
+  /* hero over real gold photo */
+  .hero{position:relative;padding:62px 0 34px;text-align:center;overflow:hidden;
+    background-image:linear-gradient(rgba(10,9,6,.74),rgba(10,9,6,.92)),
+      url('https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=1600&q=72');
+    background-size:cover;background-position:center}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(820px 360px at 50% -8%,rgba(230,184,76,.20),transparent 70%)}
   .hero .wrap{position:relative}
+  .hero .since{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#cfc8ba;margin-bottom:8px}
+  .hero .since b{color:var(--gold)}
   .hero .kick{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12.5px}
-  .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,6.4vw,62px);line-height:1.04;margin:12px 0 12px}
-  .hero p{color:#d8d2c5;max-width:600px;margin:0 auto 14px;font-size:17px}
-  .since{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--mut);margin-bottom:8px}
-  .since b{color:var(--gold)}
+  .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,6.4vw,62px);line-height:1.04;margin:12px 0 12px;text-shadow:0 3px 24px rgba(0,0,0,.5)}
+  .hero p{color:#e3ddd0;max-width:600px;margin:0 auto 14px;font-size:17px}
 
-  /* APPRAISER (centerpiece) */
-  .appcard{max-width:680px;margin:26px auto 0;background:linear-gradient(180deg,#1b1b21,#141418);border:1px solid var(--glass-b);
-    border-radius:26px;box-shadow:0 30px 70px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.04);overflow:hidden;text-align:left}
-  .apphead{padding:20px 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;background:rgba(230,184,76,.05)}
+  .appcard{max-width:680px;margin:26px auto 0;background:linear-gradient(180deg,rgba(27,27,33,.94),rgba(20,20,24,.96));backdrop-filter:blur(14px);border:1px solid var(--glass-b);
+    border-radius:26px;box-shadow:0 30px 70px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.05);overflow:hidden;text-align:left}
+  .apphead{padding:20px 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;background:rgba(230,184,76,.06)}
   .apphead .badge{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:20px;background:linear-gradient(135deg,#f0c860,#caa033);color:#1a1408}
   .apphead h3{font-family:var(--serif);font-size:20px;font-weight:800;line-height:1}
   .apphead p{font-size:12.5px;color:var(--mut);margin-top:3px}
   .appbody{padding:22px 24px 26px}
   .steps{display:flex;gap:6px;margin-bottom:18px}
-  .steps .dot{height:4px;flex:1;border-radius:4px;background:rgba(244,239,230,.12)}
-  .steps .dot.on{background:var(--gold)}
+  .steps .dot{height:4px;flex:1;border-radius:4px;background:rgba(244,239,230,.12)} .steps .dot.on{background:var(--gold)}
   .qlabel{font-weight:700;font-size:15px;margin-bottom:12px}
   .catgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
   @media(max-width:620px){.catgrid{grid-template-columns:repeat(3,1fr)}}
   @media(max-width:420px){.catgrid{grid-template-columns:repeat(2,1fr)}}
   .cat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 8px;text-align:center;cursor:pointer;transition:border-color .15s,transform .15s,background .15s}
-  .cat:hover{border-color:var(--gold);transform:translateY(-2px)}
-  .cat.sel{border-color:var(--gold);background:rgba(230,184,76,.1)}
-  .cat .ic{font-size:24px}
-  .cat .nm{font-size:11.5px;font-weight:600;margin-top:6px;color:#e7e1d4}
-  .field{margin-bottom:14px}
-  .field label{display:block;font-size:13px;font-weight:600;color:#cfc8ba;margin-bottom:6px}
-  .field input,.field select{width:100%;background:#0e0e12;border:1px solid var(--line);border-radius:11px;color:var(--ink);
-    padding:13px 14px;font-size:15px;font-family:inherit;outline:none}
+  .cat:hover{border-color:var(--gold);transform:translateY(-2px)} .cat.sel{border-color:var(--gold);background:rgba(230,184,76,.1)}
+  .cat .ic{font-size:24px} .cat .nm{font-size:11.5px;font-weight:600;margin-top:6px;color:#e7e1d4}
+  .field{margin-bottom:14px} .field label{display:block;font-size:13px;font-weight:600;color:#cfc8ba;margin-bottom:6px}
+  .field input,.field select{width:100%;background:#0e0e12;border:1px solid var(--line);border-radius:11px;color:var(--ink);padding:13px 14px;font-size:15px;font-family:inherit;outline:none}
   .field input:focus,.field select:focus{border-color:var(--gold)}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chip{background:#0e0e12;border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-size:13.5px;font-weight:600;color:#d8d2c5;cursor:pointer}
   .chip.sel{background:rgba(230,184,76,.14);border-color:var(--gold);color:var(--gold)}
-  .approw{display:flex;gap:10px;margin-top:8px}
-  .approw .btn{flex:1}
+  .approw{display:flex;gap:10px;margin-top:8px} .approw .btn{flex:1}
   .muted-note{font-size:11.5px;color:var(--mut);margin-top:14px;line-height:1.5}
-  /* result */
   .result{text-align:center;padding:6px 0}
   .result .rk{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11.5px}
   .result .rrange{font-family:var(--serif);font-weight:900;font-size:clamp(32px,7vw,48px);line-height:1.05;margin:6px 0 4px}
   .result .rfor{font-size:13.5px;color:var(--mut);margin-bottom:14px}
   .result .rnote{background:#0e0e12;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:13px;color:#cfc8ba;text-align:left;margin:8px 0 16px}
   .snap{display:flex;align-items:center;gap:10px;background:#0e0e12;border:1px dashed var(--glass-b);border-radius:12px;padding:12px 14px;font-size:13px;color:#cfc8ba;cursor:pointer;margin-bottom:12px}
-  .snap input{display:none}
-  .snap .ic{font-size:20px}
+  .snap input{display:none} .snap .ic{font-size:20px}
 
-  /* trust strip */
   .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
   .strip .wrap{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;padding:16px 22px;font-weight:600;font-size:14px;color:#d8d2c5}
-  .strip span{display:inline-flex;align-items:center;gap:8px}
-  .strip b{color:var(--gold)}
+  .strip span{display:inline-flex;align-items:center;gap:8px} .strip b{color:var(--gold)}
 
-  /* what we buy */
-  .bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-  @media(max-width:820px){.bgrid{grid-template-columns:repeat(3,1fr)}}
-  @media(max-width:520px){.bgrid{grid-template-columns:repeat(2,1fr)}}
-  .bcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 14px;text-align:center;transition:transform .15s,border-color .15s}
-  .bcard:hover{transform:translateY(-3px);border-color:var(--gold)}
-  .bcard .ic{font-size:28px}
-  .bcard .t{font-weight:700;font-size:14px;margin-top:8px}
-  .bcard .d{font-size:12px;color:var(--mut);margin-top:2px}
+  /* photo tiles */
+  .tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:860px){.tgrid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.tgrid{grid-template-columns:1fr 1fr}}
+  .tile{position:relative;height:188px;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.4);border:1px solid var(--line)}
+  .tile .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .4s}
+  .tile:hover .bg{transform:scale(1.08)}
+  .tile .ov{position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(10,8,5,.85))}
+  .tile .lab{position:absolute;left:12px;right:12px;bottom:12px;padding:11px 13px;border-radius:13px;background:rgba(18,14,9,.34);backdrop-filter:blur(10px);border:1px solid rgba(230,184,76,.25)}
+  .tile .lab .t{font-family:var(--serif);font-weight:800;font-size:17px;color:#fff;line-height:1.05}
+  .tile .lab .d{font-size:11.5px;color:#e9dfca;margin-top:2px}
 
-  /* reviews */
+  /* atmospheric band (real shop) */
+  .band{color:#fff;background-image:linear-gradient(rgba(10,8,5,.62),rgba(10,8,5,.86)),url('https://img1.wsimg.com/isteam/ip/4c7fd63b-692e-46e2-a484-f641ec37dd46/IMG_8291.jpeg');background-size:cover;background-position:center}
+  .band .glasscard{max-width:560px;padding:34px 32px;border-radius:22px;background:var(--glass);backdrop-filter:blur(14px);border:1px solid var(--glass-b);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .band h2{font-family:var(--serif);font-size:clamp(26px,4.4vw,40px);margin-bottom:12px}
+  .band p{color:#e7ddcd;margin-bottom:18px}
+
   .rgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:880px;margin:0 auto}
   @media(max-width:720px){.rgrid{grid-template-columns:1fr}}
   .rev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
-  .rev .st{color:var(--gold);letter-spacing:2px;margin-bottom:8px}
-  .rev p{font-size:15.5px}
-  .rev .who{margin-top:12px;font-weight:700;font-size:13px;color:var(--gold-d)}
-  .rev .who span{color:var(--mut);font-weight:500}
+  .rev .st{color:var(--gold);letter-spacing:2px;margin-bottom:8px} .rev p{font-size:15.5px}
+  .rev .who{margin-top:12px;font-weight:700;font-size:13px;color:var(--gold-d)} .rev .who span{color:var(--mut);font-weight:500}
 
-  /* visit */
   .visit{background:var(--bg2);border-top:1px solid var(--line)}
-  .vgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
-  @media(max-width:820px){.vgrid{grid-template-columns:1fr}}
-  .vcard h3{font-family:var(--serif);font-size:23px;margin-bottom:12px}
-  .vcard p{color:#cfc8ba;margin-bottom:7px}
+  .vgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px} @media(max-width:820px){.vgrid{grid-template-columns:1fr}}
+  .vcard h3{font-family:var(--serif);font-size:23px;margin-bottom:12px} .vcard p{color:#cfc8ba;margin-bottom:7px}
   .mapwrap{border-radius:18px;overflow:hidden;min-height:320px;border:1px solid var(--line)}
   .mapwrap iframe{width:100%;height:100%;min-height:320px;border:0;filter:grayscale(.3) invert(.9) hue-rotate(180deg) contrast(.9)}
 
   footer{background:#08080a;color:#9d978b;text-align:center;padding:30px 20px;font-size:13px}
-  footer .fl{font-family:var(--serif);color:var(--gold);font-size:19px;margin-bottom:8px}
-  footer a{color:var(--gold)}
+  footer .fl{font-family:var(--serif);color:var(--gold);font-size:19px;margin-bottom:8px} footer a{color:var(--gold)}
 
   .mbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;gap:10px;padding:10px 14px;background:rgba(8,8,10,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
   .mbar a{flex:1;text-align:center;padding:14px;border-radius:13px;font-weight:800;font-size:15px}
-  .mbar .est{background:linear-gradient(135deg,#f0c860,#caa033);color:#1a1408}
-  .mbar .call{background:linear-gradient(135deg,#2bd277,#16924c);color:#06210f}
+  .mbar .est{background:linear-gradient(135deg,#f0c860,#caa033);color:#1a1408} .mbar .call{background:linear-gradient(135deg,#2bd277,#16924c);color:#06210f}
   @media(max-width:880px){.mbar{display:flex} body{padding-bottom:72px}}
   .flag{position:fixed;top:0;left:0;z-index:99;background:var(--gold);color:#1a1408;font-size:11px;font-weight:800;padding:5px 12px;border-bottom-right-radius:10px;letter-spacing:.5px}
   .hide{display:none!important}
@@ -153,7 +139,6 @@
   <a class="btn gold" href="#appraiser" style="padding:11px 18px">💰 Get an Estimate</a>
 </div></div>
 
-<!-- HERO + APPRAISER -->
 <section class="hero" id="top"><div class="wrap">
   <div class="since">⭐ <b>Showin' you the money since 2013</b> · 12 years in Mahopac</div>
   <div class="kick">We Buy • Sell • Trade — paid on the spot</div>
@@ -161,46 +146,20 @@
   <p>Gold, tools, electronics, coins, watches, cards & more — bring it in and walk out with cash the same day. Get a ballpark first with our instant estimator.</p>
 
   <div class="appcard" id="appraiser">
-    <div class="apphead">
-      <div class="badge">🤖</div>
-      <div><h3>AI Instant Estimator</h3><p>Ballpark value in a few taps — no account, no obligation.</p></div>
-    </div>
+    <div class="apphead"><div class="badge">🤖</div><div><h3>AI Instant Estimator</h3><p>Ballpark value in a few taps — no account, no obligation.</p></div></div>
     <div class="appbody">
       <div class="steps"><div class="dot on" id="d1"></div><div class="dot" id="d2"></div><div class="dot" id="d3"></div></div>
-
-      <!-- STEP 1 -->
-      <div id="step1">
-        <div class="qlabel">What do you want to sell?</div>
-        <div class="catgrid" id="catgrid"></div>
-      </div>
-
-      <!-- STEP 2 -->
-      <div id="step2" class="hide">
-        <div class="qlabel" id="step2title">Tell us a little more</div>
-        <div id="step2body"></div>
-        <div class="approw">
-          <button class="btn ghost" onclick="appBack()">← Back</button>
-          <button class="btn gold" onclick="appEstimate()">Get my estimate →</button>
-        </div>
-      </div>
-
-      <!-- STEP 3 -->
-      <div id="step3" class="hide">
-        <div class="result">
-          <div class="rk" id="rk">Estimated same-day cash</div>
-          <div class="rrange" id="rrange">$—</div>
-          <div class="rfor" id="rfor"></div>
-          <div class="rnote" id="rnote"></div>
-          <label class="snap"><span class="ic">📷</span><span id="snaptxt">Snap a photo of your item to show in store (optional)</span><input type="file" accept="image/*" onchange="appSnap(this)"></label>
-          <div class="approw">
-            <a class="btn green" href="tel:+18456210906">📞 Call for a firm offer</a>
-            <a class="btn glass" href="#visit">📍 Get directions</a>
-          </div>
-          <div class="approw" style="margin-top:8px"><button class="btn ghost" style="flex:1" onclick="appReset()">↺ Estimate another item</button></div>
-        </div>
-      </div>
-
-      <div class="muted-note">These are ballpark estimates based on general market values — <b>not a firm offer</b>. Final price is set in store after we inspect and test your item. Gold/silver estimates move with the live market.</div>
+      <div id="step1"><div class="qlabel">What do you want to sell?</div><div class="catgrid" id="catgrid"></div></div>
+      <div id="step2" class="hide"><div class="qlabel" id="step2title">Tell us a little more</div><div id="step2body"></div>
+        <div class="approw"><button class="btn ghost" onclick="appBack()">← Back</button><button class="btn gold" onclick="appEstimate()">Get my estimate →</button></div></div>
+      <div id="step3" class="hide"><div class="result">
+        <div class="rk" id="rk">Estimated same-day cash</div><div class="rrange" id="rrange">$—</div><div class="rfor" id="rfor"></div>
+        <div class="rnote" id="rnote"></div>
+        <label class="snap"><span class="ic">📷</span><span id="snaptxt">Snap a photo of your item to show in store (optional)</span><input type="file" accept="image/*" onchange="appSnap(this)"></label>
+        <div class="approw"><a class="btn green" href="tel:+18456210906">📞 Call for a firm offer</a><a class="btn glass" href="#visit">📍 Get directions</a></div>
+        <div class="approw" style="margin-top:8px"><button class="btn ghost" style="flex:1" onclick="appReset()">↺ Estimate another item</button></div>
+      </div></div>
+      <div class="muted-note">Ballpark estimates from general market values — <b>not a firm offer</b>. Final price is set in store after we inspect and test your item. Gold/silver estimates move with the live market.</div>
     </div>
   </div>
 </div></section>
@@ -209,23 +168,30 @@
   <span>💵 <b>Cash on the spot</b></span><span>📅 Same-day payouts</span><span>🏆 12 years local</span><span>🏠 Estate &amp; collection buyouts</span>
 </div></div>
 
-<!-- WHAT WE BUY -->
 <section id="buy"><div class="wrap">
   <div class="center"><div class="eyebrow">If it has value, we want it</div><h2 class="h2 serif">What we buy, sell &amp; trade</h2>
   <p class="sub">One stop for all of it — bring in a single item or a whole collection.</p></div>
-  <div class="bgrid">
-    <div class="bcard"><div class="ic">🪙</div><div class="t">Gold &amp; Silver</div><div class="d">Jewelry, coins, bullion</div></div>
-    <div class="bcard"><div class="ic">⌚</div><div class="t">Watches</div><div class="d">Luxury to vintage</div></div>
-    <div class="bcard"><div class="ic">📱</div><div class="t">Apple &amp; Electronics</div><div class="d">Phones, laptops, more</div></div>
-    <div class="bcard"><div class="ic">🛠️</div><div class="t">Power Tools</div><div class="d">DeWalt, Milwaukee…</div></div>
-    <div class="bcard"><div class="ic">🃏</div><div class="t">Sports Cards</div><div class="d">Vintage &amp; modern</div></div>
-    <div class="bcard"><div class="ic">🎸</div><div class="t">Instruments</div><div class="d">Guitars, amps &amp; more</div></div>
-    <div class="bcard"><div class="ic">🎮</div><div class="t">Games &amp; Comics</div><div class="d">Retro to new</div></div>
-    <div class="bcard"><div class="ic">💎</div><div class="t">Collectibles</div><div class="d">Antiques, memorabilia</div></div>
+  <div class="tgrid">
+    <div class="tile"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=70')"></div><div class="ov"></div><div class="lab"><div class="t">Gold &amp; Jewelry</div><div class="d">Rings, chains, scrap gold</div></div></div>
+    <div class="tile"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=700&q=70')"></div><div class="ov"></div><div class="lab"><div class="t">Coins &amp; Bullion</div><div class="d">Silver, gold, collectible coins</div></div></div>
+    <div class="tile"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=70')"></div><div class="ov"></div><div class="lab"><div class="t">Watches</div><div class="d">Luxury to vintage</div></div></div>
+    <div class="tile"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=700&q=70')"></div><div class="ov"></div><div class="lab"><div class="t">Apple &amp; Electronics</div><div class="d">Phones, laptops, tablets</div></div></div>
+    <div class="tile"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1426927308491-6380b6a9936f?auto=format&fit=crop&w=700&q=70')"></div><div class="ov"></div><div class="lab"><div class="t">Power Tools</div><div class="d">DeWalt, Milwaukee, Makita</div></div></div>
+    <div class="tile"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=700&q=70')"></div><div class="ov"></div><div class="lab"><div class="t">Instruments</div><div class="d">Guitars, amps &amp; more</div></div></div>
+    <div class="tile"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=700&q=70')"></div><div class="ov"></div><div class="lab"><div class="t">Games &amp; Cards</div><div class="d">Consoles, retro, sports cards</div></div></div>
+    <div class="tile"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=70')"></div><div class="ov"></div><div class="lab"><div class="t">Diamonds &amp; Designer</div><div class="d">Stones, bags, collectibles</div></div></div>
   </div>
 </div></section>
 
-<!-- REVIEWS -->
+<section class="band"><div class="wrap">
+  <div class="glasscard">
+    <div class="eyebrow" style="color:#ffd9a0">Showin' you the money since 2013</div>
+    <h2 class="serif">The Tri-State's go-to BUY • SELL • TRADE shop</h2>
+    <p>Twelve years on Route 6 in Mahopac. Bring in one thing or a whole estate — we'll look at anything of value and pay you on the spot, same day. Honest, fair, friendly.</p>
+    <a class="btn gold" href="#appraiser">💰 See what yours is worth</a>
+  </div>
+</div></section>
+
 <section id="reviews" class="strip" style="border:none"><div class="wrap">
   <div class="center"><div class="eyebrow">The neighbors trust us</div><h2 class="h2 serif">Honest, fair &amp; friendly</h2></div>
   <div class="rgrid">
@@ -234,173 +200,59 @@
   </div>
 </div></section>
 
-<!-- VISIT -->
-<section class="visit" id="visit"><div class="wrap">
-  <div class="vgrid">
-    <div class="vcard">
-      <div class="eyebrow">Come see us</div>
-      <h3 class="serif" style="margin-top:8px">Stop in — leave with cash</h3>
-      <p>288 US Route 6<br>Mahopac, NY 10541</p>
-      <p style="margin-top:10px"><b style="color:var(--ink)">Call ahead:</b> <a href="tel:+18456210906" style="color:var(--gold);font-weight:700">(845) 621-0906</a></p>
-      <p style="font-size:13px;color:var(--mut);margin-top:10px">Hours vary by day — give us a quick call before you head over, especially near closing.</p>
-      <p style="margin-top:14px"><a class="btn green" href="tel:+18456210906">📞 Call now</a></p>
-    </div>
-    <div class="mapwrap">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Xtra Change location"
-        src="https://www.google.com/maps?q=Xtra+Change+of+Mahopac,+288+US-6,+Mahopac,+NY+10541&output=embed"></iframe>
-    </div>
+<section class="visit" id="visit"><div class="wrap"><div class="vgrid">
+  <div class="vcard">
+    <div class="eyebrow">Come see us</div><h3 class="serif" style="margin-top:8px">Stop in — leave with cash</h3>
+    <p>288 US Route 6<br>Mahopac, NY 10541</p>
+    <p style="margin-top:10px"><b style="color:var(--ink)">Call ahead:</b> <a href="tel:+18456210906" style="color:var(--gold);font-weight:700">(845) 621-0906</a></p>
+    <p style="font-size:13px;color:var(--mut);margin-top:10px">Hours vary by day — give us a quick call before you head over, especially near closing.</p>
+    <p style="margin-top:14px"><a class="btn green" href="tel:+18456210906">📞 Call now</a></p>
   </div>
-</div></section>
+  <div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Xtra Change location" src="https://www.google.com/maps?q=Xtra+Change+of+Mahopac,+288+US-6,+Mahopac,+NY+10541&output=embed"></iframe></div>
+</div></div></section>
 
 <footer>
   <div class="fl serif">Xtra Change of Mahopac</div>
   <p>288 US Route 6, Mahopac, NY 10541 · <a href="tel:+18456210906">(845) 621-0906</a> · <a href="https://www.facebook.com/THEXTRACHANGE/" target="_blank" rel="noopener">Facebook</a></p>
-  <p style="margin-top:8px;opacity:.7">Demo concept by Obsidian Labs · not affiliated. Estimates are ballpark only; final offer set in store.</p>
+  <p style="margin-top:8px;opacity:.7">Demo concept by Obsidian Labs · not affiliated. Estimates are ballpark only; final offer set in store. Stock imagery shown for concept.</p>
 </footer>
 
-<div class="mbar">
-  <a class="est" href="#appraiser">💰 Get an Estimate</a>
-  <a class="call" href="tel:+18456210906">📞 Call</a>
-</div>
+<div class="mbar"><a class="est" href="#appraiser">💰 Get an Estimate</a><a class="call" href="tel:+18456210906">📞 Call</a></div>
 
 <script>
-/* ---------- AI Instant Estimator ---------- */
-var GOLD_24K_PER_G = 92;   // est. today's market $/g pure (demo; adjust to live)
-var SILVER_PER_OZ_PAID = 22; // est. paid per troy oz silver content
-
-var CATS = {
-  gold:    {ic:"🪙", nm:"Gold / Jewelry"},
-  silver:  {ic:"⚪", nm:"Silver / Coins"},
-  watch:   {ic:"⌚", nm:"Watch"},
-  apple:   {ic:"📱", nm:"Apple / Electronics"},
-  tools:   {ic:"🛠️", nm:"Power Tools"},
-  cards:   {ic:"🃏", nm:"Sports Cards"},
-  other:   {ic:"💎", nm:"Collectible / Other"}
-};
-var state = {cat:null, fields:{}};
-
+var GOLD_24K_PER_G=92, SILVER_PER_OZ_PAID=22;
+var CATS={gold:{ic:"🪙",nm:"Gold / Jewelry"},silver:{ic:"⚪",nm:"Silver / Coins"},watch:{ic:"⌚",nm:"Watch"},apple:{ic:"📱",nm:"Apple / Electronics"},tools:{ic:"🛠️",nm:"Power Tools"},cards:{ic:"🃏",nm:"Sports Cards"},other:{ic:"💎",nm:"Collectible / Other"}};
+var state={cat:null,fields:{}};
 function $(id){return document.getElementById(id);}
-function setStep(n){
-  $('step1').classList.toggle('hide', n!==1);
-  $('step2').classList.toggle('hide', n!==2);
-  $('step3').classList.toggle('hide', n!==3);
-  $('d1').classList.toggle('on', n>=1);
-  $('d2').classList.toggle('on', n>=2);
-  $('d3').classList.toggle('on', n>=3);
-}
-function renderCats(){
-  var g=$('catgrid'); g.innerHTML='';
-  Object.keys(CATS).forEach(function(k){
-    var c=CATS[k];
-    var d=document.createElement('div'); d.className='cat'; d.onclick=function(){pickCat(k)};
-    d.innerHTML='<div class="ic">'+c.ic+'</div><div class="nm">'+c.nm+'</div>';
-    g.appendChild(d);
-  });
-}
-function chipRow(name, opts){
-  return '<div class="chips" data-field="'+name+'">'+opts.map(function(o,i){
-    return '<div class="chip'+(i===0?' sel':'')+'" data-val="'+o.v+'" onclick="pickChip(this)">'+o.t+'</div>';
-  }).join('')+'</div>';
-}
-function pickChip(el){
-  var row=el.parentNode; [].forEach.call(row.children,function(c){c.classList.remove('sel')});
-  el.classList.add('sel');
-}
+function setStep(n){$('step1').classList.toggle('hide',n!==1);$('step2').classList.toggle('hide',n!==2);$('step3').classList.toggle('hide',n!==3);$('d1').classList.toggle('on',n>=1);$('d2').classList.toggle('on',n>=2);$('d3').classList.toggle('on',n>=3);}
+function renderCats(){var g=$('catgrid');g.innerHTML='';Object.keys(CATS).forEach(function(k){var c=CATS[k];var d=document.createElement('div');d.className='cat';d.onclick=function(){pickCat(k)};d.innerHTML='<div class="ic">'+c.ic+'</div><div class="nm">'+c.nm+'</div>';g.appendChild(d);});}
+function chipRow(name,opts){return '<div class="chips" data-field="'+name+'">'+opts.map(function(o,i){return '<div class="chip'+(i===0?' sel':'')+'" data-val="'+o.v+'" onclick="pickChip(this)">'+o.t+'</div>';}).join('')+'</div>';}
+function pickChip(el){var row=el.parentNode;[].forEach.call(row.children,function(c){c.classList.remove('sel')});el.classList.add('sel');}
 function getChip(name){var r=document.querySelector('.chips[data-field="'+name+'"] .chip.sel');return r?r.getAttribute('data-val'):null;}
-
-function pickCat(k){
-  state.cat=k; state.fields={};
-  var b=$('step2body'); var title=$('step2title');
-  if(k==='gold'){
-    title.textContent='About your gold';
-    b.innerHTML='<div class="field"><label>Karat (purity)</label>'+chipRow('karat',[{v:14,t:'14K'},{v:10,t:'10K'},{v:18,t:'18K'},{v:22,t:'22K'},{v:24,t:'24K'}])+'</div>'+
-      '<div class="field"><label>Approx. weight in grams (a ring ≈ 3–6g)</label><input id="f_wt" type="number" inputmode="decimal" placeholder="e.g. 8"></div>';
-  } else if(k==='silver'){
-    title.textContent='About your silver / coins';
-    b.innerHTML='<div class="field"><label>Type</label>'+chipRow('stype',[{v:'coins',t:'Silver coins'},{v:'flat',t:'Flatware / jewelry'},{v:'bull',t:'Bars / rounds'}])+'</div>'+
-      '<div class="field"><label>Approx. silver weight (troy oz, if known)</label><input id="f_oz" type="number" inputmode="decimal" placeholder="e.g. 10"></div>';
-  } else if(k==='watch'){
-    title.textContent='About your watch';
-    b.innerHTML='<div class="field"><label>Brand tier</label>'+chipRow('tier',[{v:'lux',t:'Luxury (Rolex, Omega…)'},{v:'mid',t:'Mid (Tag, Seiko, Tissot)'},{v:'fashion',t:'Fashion (Fossil, MK…)'}])+'</div>'+
-      '<div class="field"><label>Condition</label>'+chipRow('cond',[{v:'work',t:'Working'},{v:'broke',t:'Not working'}])+'</div>';
-  } else if(k==='apple'){
-    title.textContent='About your device';
-    b.innerHTML='<div class="field"><label>Device</label>'+chipRow('dev',[{v:'iphone',t:'iPhone'},{v:'macbook',t:'MacBook'},{v:'ipad',t:'iPad'},{v:'other',t:'Other electronics'}])+'</div>'+
-      '<div class="field"><label>Condition</label>'+chipRow('cond',[{v:'mint',t:'Like new'},{v:'good',t:'Good'},{v:'rough',t:'Cracked / rough'}])+'</div>';
-  } else if(k==='tools'){
-    title.textContent='About your tools';
-    b.innerHTML='<div class="field"><label>Brand</label>'+chipRow('brand',[{v:'prem',t:'DeWalt / Milwaukee / Makita'},{v:'other',t:'Other / older'}])+'</div>'+
-      '<div class="field"><label>How many pieces?</label>'+chipRow('qty',[{v:1,t:'1'},{v:3,t:'A few'},{v:8,t:'A whole kit'}])+'</div>';
-  } else if(k==='cards'){
-    title.textContent='About your cards';
-    b.innerHTML='<div class="field"><label>Era / star power</label>'+chipRow('era',[{v:'vint',t:'Vintage / big stars'},{v:'mix',t:'Mixed lot'},{v:'mod',t:'Modern commons'}])+'</div>';
-  } else {
-    title.textContent='Tell us what it is';
-    b.innerHTML='<div class="field"><label>What is it? (instrument, console, antique, designer bag, knife…)</label><input id="f_desc" type="text" placeholder="e.g. Fender Strat, PS5, Coach bag"></div>';
-  }
-  setStep(2);
-}
-function appBack(){ setStep(1); }
-function fmt(n){ return '$'+Math.round(n).toLocaleString(); }
-function range(lo,hi){ return fmt(lo)+' – '+fmt(hi); }
-
-function appEstimate(){
-  var k=state.cat, lo=0, hi=0, forTxt='', note='', firm=false;
-  if(k==='gold'){
-    var kar=+getChip('karat')||14, wt=+($('f_wt').value)||0;
-    if(wt<=0){ alert('Enter an approximate weight in grams.'); return; }
-    var pur={10:0.417,14:0.583,18:0.750,22:0.917,24:0.999}[kar]||0.583;
-    var melt = wt*pur*GOLD_24K_PER_G;
-    lo=melt*0.62; hi=melt*0.78;
-    forTxt='for ~'+wt+'g of '+kar+'K gold';
-    note='Based on today’s gold market (~'+fmt(GOLD_24K_PER_G)+'/g pure). We test every piece in store and pay a market rate — bring it in for an exact, same-day number.';
-  } else if(k==='silver'){
-    var oz=+($('f_oz').value)||0;
-    if(oz>0){ lo=oz*SILVER_PER_OZ_PAID*0.9; hi=oz*SILVER_PER_OZ_PAID*1.1; forTxt='for ~'+oz+' oz of silver'; }
-    else { lo=20; hi=400; forTxt='for a typical lot'; }
-    note='Silver and coins are priced by weight (melt) plus any collector premium. Coins can be worth far more than melt — bring them in for a proper count.';
-  } else if(k==='watch'){
-    var tier=getChip('tier'), cond=getChip('cond');
-    if(tier==='lux'){ lo= cond==='work'?700:300; hi= cond==='work'?9000:4000; }
-    else if(tier==='mid'){ lo=cond==='work'?70:25; hi=cond==='work'?600:200; }
-    else { lo=10; hi=cond==='work'?90:40; }
-    forTxt='for your watch';
-    note='Watches vary enormously by model, reference and condition. Luxury pieces especially — the real number comes from seeing it. Bring the box/papers if you have them.';
-  } else if(k==='apple'){
-    var dev=getChip('dev'), c=getChip('cond');
-    var base={iphone:[60,300,650],macbook:[150,500,1100],ipad:[50,200,420],other:[10,60,220]}[dev]||[10,60,220];
-    var idx=c==='mint'?2:(c==='good'?1:0);
-    lo=base[Math.max(0,idx-1)]*(c==='rough'?0.5:0.7); hi=base[idx];
-    forTxt='for your '+(dev==='other'?'device':dev);
-    note='Electronics are priced on exact model, storage and condition. Wipe your device and bring the charger — it bumps the offer.';
-  } else if(k==='tools'){
-    var brand=getChip('brand'), qty=+getChip('qty')||1;
-    var per= brand==='prem'?[35,160]:[12,55];
-    lo=per[0]*qty; hi=per[1]*qty;
-    forTxt='for '+(qty>=8?'a full kit':(qty>=3?'a few pieces':'one tool'));
-    note='Working brand-name tools (DeWalt, Milwaukee, Makita…) hold value best — batteries and chargers add to the offer.';
-  } else if(k==='cards'){
-    var era=getChip('era');
-    if(era==='vint'){ lo=40; hi=4000; } else if(era==='mix'){ lo=20; hi=600; } else { lo=5; hi=120; }
-    forTxt='for your cards';
-    note='Card value depends on player, year and grade — anywhere from a few bucks to thousands. Bring them in (or photos) and we’ll go through them with you.';
-  } else {
-    var desc=($('f_desc')&&$('f_desc').value||'').trim();
-    lo=0; hi=0; forTxt='';
-    note='If it has value, we want it. Snap a photo'+(desc?' of your '+desc:'')+' or bring it in for an on-the-spot offer — we buy instruments, consoles, antiques, designer goods, knives, memorabilia and more.';
-  }
-  // render
-  if(hi>0){ $('rk').textContent='Estimated same-day cash'; $('rrange').textContent=range(lo,hi); }
-  else { $('rk').textContent='Worth a look'; $('rrange').textContent='Bring it in'; }
-  $('rfor').textContent=forTxt;
-  $('rnote').innerHTML=note;
-  setStep(3);
-}
-function appSnap(input){
-  if(input.files&&input.files[0]){ $('snaptxt').textContent='✓ Photo ready — show it to us in store or text it over.'; }
-}
-function appReset(){ state={cat:null,fields:{}}; setStep(1); }
-renderCats(); setStep(1);
+function pickCat(k){state.cat=k;state.fields={};var b=$('step2body');var title=$('step2title');
+  if(k==='gold'){title.textContent='About your gold';b.innerHTML='<div class="field"><label>Karat (purity)</label>'+chipRow('karat',[{v:14,t:'14K'},{v:10,t:'10K'},{v:18,t:'18K'},{v:22,t:'22K'},{v:24,t:'24K'}])+'</div><div class="field"><label>Approx. weight in grams (a ring ≈ 3–6g)</label><input id="f_wt" type="number" inputmode="decimal" placeholder="e.g. 8"></div>';}
+  else if(k==='silver'){title.textContent='About your silver / coins';b.innerHTML='<div class="field"><label>Type</label>'+chipRow('stype',[{v:'coins',t:'Silver coins'},{v:'flat',t:'Flatware / jewelry'},{v:'bull',t:'Bars / rounds'}])+'</div><div class="field"><label>Approx. silver weight (troy oz, if known)</label><input id="f_oz" type="number" inputmode="decimal" placeholder="e.g. 10"></div>';}
+  else if(k==='watch'){title.textContent='About your watch';b.innerHTML='<div class="field"><label>Brand tier</label>'+chipRow('tier',[{v:'lux',t:'Luxury (Rolex, Omega…)'},{v:'mid',t:'Mid (Tag, Seiko, Tissot)'},{v:'fashion',t:'Fashion (Fossil, MK…)'}])+'</div><div class="field"><label>Condition</label>'+chipRow('cond',[{v:'work',t:'Working'},{v:'broke',t:'Not working'}])+'</div>';}
+  else if(k==='apple'){title.textContent='About your device';b.innerHTML='<div class="field"><label>Device</label>'+chipRow('dev',[{v:'iphone',t:'iPhone'},{v:'macbook',t:'MacBook'},{v:'ipad',t:'iPad'},{v:'other',t:'Other electronics'}])+'</div><div class="field"><label>Condition</label>'+chipRow('cond',[{v:'mint',t:'Like new'},{v:'good',t:'Good'},{v:'rough',t:'Cracked / rough'}])+'</div>';}
+  else if(k==='tools'){title.textContent='About your tools';b.innerHTML='<div class="field"><label>Brand</label>'+chipRow('brand',[{v:'prem',t:'DeWalt / Milwaukee / Makita'},{v:'other',t:'Other / older'}])+'</div><div class="field"><label>How many pieces?</label>'+chipRow('qty',[{v:1,t:'1'},{v:3,t:'A few'},{v:8,t:'A whole kit'}])+'</div>';}
+  else if(k==='cards'){title.textContent='About your cards';b.innerHTML='<div class="field"><label>Era / star power</label>'+chipRow('era',[{v:'vint',t:'Vintage / big stars'},{v:'mix',t:'Mixed lot'},{v:'mod',t:'Modern commons'}])+'</div>';}
+  else{title.textContent='Tell us what it is';b.innerHTML='<div class="field"><label>What is it? (instrument, console, antique, designer bag, knife…)</label><input id="f_desc" type="text" placeholder="e.g. Fender Strat, PS5, Coach bag"></div>';}
+  setStep(2);}
+function appBack(){setStep(1);}
+function fmt(n){return '$'+Math.round(n).toLocaleString();} function range(lo,hi){return fmt(lo)+' – '+fmt(hi);}
+function appEstimate(){var k=state.cat,lo=0,hi=0,forTxt='',note='';
+  if(k==='gold'){var kar=+getChip('karat')||14,wt=+($('f_wt').value)||0;if(wt<=0){alert('Enter an approximate weight in grams.');return;}var pur={10:0.417,14:0.583,18:0.750,22:0.917,24:0.999}[kar]||0.583;var melt=wt*pur*GOLD_24K_PER_G;lo=melt*0.62;hi=melt*0.78;forTxt='for ~'+wt+'g of '+kar+'K gold';note='Based on today’s gold market (~'+fmt(GOLD_24K_PER_G)+'/g pure). We test every piece in store and pay a market rate — bring it in for an exact, same-day number.';}
+  else if(k==='silver'){var oz=+($('f_oz').value)||0;if(oz>0){lo=oz*SILVER_PER_OZ_PAID*0.9;hi=oz*SILVER_PER_OZ_PAID*1.1;forTxt='for ~'+oz+' oz of silver';}else{lo=20;hi=400;forTxt='for a typical lot';}note='Silver and coins are priced by weight (melt) plus any collector premium. Coins can be worth far more than melt — bring them in for a proper count.';}
+  else if(k==='watch'){var tier=getChip('tier'),cond=getChip('cond');if(tier==='lux'){lo=cond==='work'?700:300;hi=cond==='work'?9000:4000;}else if(tier==='mid'){lo=cond==='work'?70:25;hi=cond==='work'?600:200;}else{lo=10;hi=cond==='work'?90:40;}forTxt='for your watch';note='Watches vary enormously by model, reference and condition. Luxury pieces especially — the real number comes from seeing it. Bring the box/papers if you have them.';}
+  else if(k==='apple'){var dev=getChip('dev'),c=getChip('cond');var base={iphone:[60,300,650],macbook:[150,500,1100],ipad:[50,200,420],other:[10,60,220]}[dev]||[10,60,220];var idx=c==='mint'?2:(c==='good'?1:0);lo=base[Math.max(0,idx-1)]*(c==='rough'?0.5:0.7);hi=base[idx];forTxt='for your '+(dev==='other'?'device':dev);note='Electronics are priced on exact model, storage and condition. Wipe your device and bring the charger — it bumps the offer.';}
+  else if(k==='tools'){var brand=getChip('brand'),qty=+getChip('qty')||1;var per=brand==='prem'?[35,160]:[12,55];lo=per[0]*qty;hi=per[1]*qty;forTxt='for '+(qty>=8?'a full kit':(qty>=3?'a few pieces':'one tool'));note='Working brand-name tools (DeWalt, Milwaukee, Makita…) hold value best — batteries and chargers add to the offer.';}
+  else if(k==='cards'){var era=getChip('era');if(era==='vint'){lo=40;hi=4000;}else if(era==='mix'){lo=20;hi=600;}else{lo=5;hi=120;}forTxt='for your cards';note='Card value depends on player, year and grade — anywhere from a few bucks to thousands. Bring them in (or photos) and we’ll go through them with you.';}
+  else{var desc=($('f_desc')&&$('f_desc').value||'').trim();lo=0;hi=0;forTxt='';note='If it has value, we want it. Snap a photo'+(desc?' of your '+desc:'')+' or bring it in for an on-the-spot offer — we buy instruments, consoles, antiques, designer goods, knives, memorabilia and more.';}
+  if(hi>0){$('rk').textContent='Estimated same-day cash';$('rrange').textContent=range(lo,hi);}else{$('rk').textContent='Worth a look';$('rrange').textContent='Bring it in';}
+  $('rfor').textContent=forTxt;$('rnote').innerHTML=note;setStep(3);}
+function appSnap(input){if(input.files&&input.files[0]){$('snaptxt').textContent='✓ Photo ready — show it to us in store or text it over.';}}
+function appReset(){state={cat:null,fields:{}};setStep(1);}
+renderCats();setStep(1);
 </script>
 </body>
 </html>
